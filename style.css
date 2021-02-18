@@ -1,0 +1,669 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1020px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Navbar stayle area start */
+body {
+  font-family: montserrat;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  background-image: url("./images/Illustration/Group\ 45@2x.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left -17% top -74%;
+  background-size: 27%;
+  position: relative;
+}
+label.logo {
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.logo img {
+  width: 120px;
+}
+@media (max-width: 952px) {
+  .logo img {
+    width: 80px;
+  }
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  font-weight: bold;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+.navContactBtn {
+  padding: 18px 45px;
+  background: linear-gradient(45deg, #1bd6bb, #009efd);
+  color: #fff;
+  border: none;
+  border-radius: 20px 0px 20px 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/* Navbar stayle area ended */
+
+/* ***************************************************************** */
+/* ======================= Header area start ======================= */
+/* ***************************************************************** */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+
+header {
+  /* display: flex; */
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}
+
+.header-content-texts {
+  width: 48%;
+  float: left;
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.header-content-texts h2 {
+  font-family: "Playfair Display", serif;
+  color: "#111430";
+  font-weight: 900;
+  font-size: 5.9vw;
+  line-height: 80px;
+  margin: 0px 30px 0px 0px;
+}
+.header-content-texts p {
+  padding: 0px 100px 0px 0px;
+  color: #6c7789;
+  font-weight: 500;
+  font-size: 18px;
+}
+.header-content-texts button {
+  padding: 18px 45px;
+  background: linear-gradient(55deg, #18d0c3, #0bb3e5);
+  color: #fff;
+  border: none;
+  border-radius: 20px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.header-content-texts button:focus {
+  outline: none;
+}
+
+.header-content-img {
+  width: 48%;
+  float: left;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header-content-img img {
+  width: 100%;
+}
+
+/* responsiv  */
+@media only screen and (max-width: 650px) {
+  header {
+    height: auto;
+  }
+  .header-content-texts {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .header-content-img {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+/* header area ended */
+
+/* ***************************************************************** */
+/* =============== What we do cars area start ==================== */
+/* ***************************************************************** */
+.what_we_do_cars_area-bg {
+  background-image: url("./images/Illustration/exp-bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+.what_we_do_cars_area {
+  height: 500px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.what_we_do_cars_area h5 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.what_we_do_cars_area p {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #9e9999;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  padding: 35px 36px 35px 36px;
+  text-align: center;
+  border-radius: 70px 0px 50px 0px;
+  transition: 0.7s;
+}
+.card:hover {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 10px #e6f6f0;
+}
+
+.card img {
+  width: 27%;
+}
+
+.card h3 {
+  margin: 10px 0px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 100;
+  margin: 0px;
+}
+/* Responsive columns */
+
+@media screen and (max-width: 1077px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card p {
+    padding: 0px 25px;
+  }
+}
+
+/* What we do cars area ended */
+
+/* ***************************************************************** */
+/* ========== Stay Running & Project area started =============== */
+/* *****************-> grid system used ************************** */
+
+.grid-container_Stay_Running_project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 600px;
+}
+@media (max-width: 900px) {
+  .grid-container_Stay_Running_project {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    padding: 50px 0px;
+  }
+}
+.running_project-img {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.running_project-img img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.running_project-description {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.running_project-description h2 {
+  font-family: "Playfair Display", serif;
+  color: "#111430";
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 80px;
+  margin: 0px;
+}
+.running_project-description p {
+  margin: 0px 0px 20px 0px;
+}
+
+.running_project-description button {
+  width: 160px;
+  padding: 18px 0px;
+  background: linear-gradient(55deg, #18d0c3, #0bb3e5);
+  color: #fff;
+  border: none;
+  border-radius: 20px 0px 20px 0px;
+  cursor: pointer;
+}
+
+/* Stay Running & Project area ended */
+
+/* ***************************************************************** */
+/* ================ Our Achievements area started ================= */
+/* *****************-> grid system used ************************** */
+.grid-container_Our_Achievements-bg {
+  background-color: #fafffd;
+}
+.grid-container_Our_Achievements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 500px;
+}
+@media (max-width: 900px) {
+  .grid-container_Our_Achievements {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    padding: 50px 0px;
+  }
+}
+
+.Our_Achievements-description {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.Our_Achievements-cards {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.Our_Achievements-description h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 80px;
+  margin: 0px;
+}
+
+.Our_Achievements-description p {
+  margin: 0px 0px 20px 0px;
+}
+
+.Our_Achievements-cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 700px) {
+  .Our_Achievements-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.Our_Achievements-card {
+  color: white;
+  padding: 2rem;
+  border-radius: 40px 0px;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  box-shadow: 0px 3px 10px 3px #ced4da;
+  color: black;
+  transition: 0.5s;
+}
+
+.Our_Achievements-card:hover {
+  background-color: #18cfc5;
+  color: #fff;
+}
+
+.Our_Achievements-card img {
+  width: 30%;
+  /* height: 30%; */
+  padding-right: 10px;
+}
+
+.Our_Achievements-card h5 {
+  margin: 0px;
+  font-weight: 900;
+  font-size: 30px;
+}
+.Our_Achievements-card p {
+  margin: 0px;
+}
+/* Our Achievements area ended */
+
+/* ***************************************************************** */
+/* ================ Choose Your Dedicated Team area started ========= */
+/* *****************-> float used ************************** */
+
+.Team-area {
+  height: 600px;
+  display: grid;
+  align-content: center;
+}
+.team_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+@media (max-width: 1119px) {
+  .team_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Team-area {
+    height: auto;
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 700px) {
+  .team_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.team_card {
+  box-shadow: 0px 5px 10px 2px #edf1f0;
+}
+
+.team_card:nth-child(2) {
+  border: 3px solid #3cedce;
+}
+.team_card:nth-child(3) {
+  border: 3px solid #fff;
+}
+.team_card:nth-child(1) {
+  border: 3px solid #fff;
+}
+.team_card:nth-child(1):hover {
+  border: 3px solid #3cedce;
+}
+.team_card:nth-child(3):hover {
+  border: 3px solid #3cedce;
+}
+
+.Team-area {
+  text-align: center;
+}
+
+.team_card h5 {
+  font-weight: 900;
+  font-size: 35px;
+  margin: 10px 0px;
+}
+.team_card span {
+}
+.team_card hr {
+  width: 80%;
+  height: 2px;
+  background-color: #18cfc5;
+  border: none;
+}
+.team_card p {
+  line-height: 35px;
+  color: rgb(101, 107, 107);
+  font-weight: 500;
+}
+
+.team_card button {
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 20px 0px;
+  border: none;
+  background-color: #18cfc5;
+  color: #fff;
+  font-weight: bold;
+}
+.team_card button:focus {
+  outline: none;
+}
+/* Choose Your Dedicated Team area ended */
+
+/* ***************************************************************** */
+/* ================ Footer area started ========= */
+/* *****************-> flexbox used ************************** */
+
+.input-text {
+  margin-top: 50px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.input-text h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+.input-text p {
+  margin-bottom: 50px;
+  color: #707070;
+}
+input::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+}
+.footer-input-div {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.position-relative {
+  position: relative;
+}
+.tex-bar {
+  padding: 15px;
+  border: none;
+  box-shadow: 0px 0px 12px #c4bfbf;
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.start-btn {
+  position: absolute;
+  left: auto;
+  right: 5px;
+  top: 5px;
+  color: white;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #1bd6bb, #009efd);
+}
+
+footer {
+  height: 600px;
+  padding: 0 50px;
+  display: grid;
+  align-content: center;
+}
+
+/* Float four columns side by side */
+.column-footer:first-child {
+  width: 40%;
+}
+.column-footer {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-footer {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .column-footer:first-child {
+    width: 48%;
+  }
+  footer {
+    padding: 0px;
+    height: auto;
+  }
+  .column-footer {
+    width: 48%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column-footer:first-child {
+    width: 100%;
+  }
+  .column-footer {
+    width: 25px;
+  }
+  .column-footer {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-logos {
+  display: flex;
+  align-items: start;
+}
+
+.footer-logo {
+  width: 60%;
+}
+.footer-icons img {
+  margin: 30px 10px 10px 5px;
+}
+
+.card-footer p {
+}
+.card-footer a {
+  color: #80858a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Style the counter cards */
+.card-footer {
+  padding: 16px;
+  text-align: center;
+}
